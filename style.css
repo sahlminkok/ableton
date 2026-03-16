@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.header-primary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 1.5px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.header-secondary {
+  padding: 1.5rem 2.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0000ff;
+}
+
+.header-primary .login {
+  font-size: 1rem;
+}
+
+.header nav img {
+  width: 60px;
+  height: auto;
+  display: block;
+}
+
+.active {
+  color: #fd5948;
+}
+
+/* .main {
+  padding: 0 8%;
+} */
+
+.hero {
+  margin: 0 8%;
+  background-image: url("./assets/images/header.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 7rem;
+  font-weight: 600;
+  color: #fd5948;
+}
+
+.body-text {
+  padding: 7rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.body-text h2 {
+  width: 52vw;
+}
+
+.body-text p {
+  width: 52vw;
+  font-size: 1.3rem;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.gallery_1 {
+  gap: 5vw;
+  background: linear-gradient(to right, transparent 42%, #fbffa7 42%);
+  height: 58vw;
+}
+
+.gallery_1 img:nth-child(1) {
+  width: 40vw;
+  height: 40vw;
+}
+
+.gallery_1 img:nth-child(2) {
+  height: 20vw;
+  width: auto;
+}
+
+.youtube {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery_2 {
+  background: linear-gradient(to left, transparent 42%, #b6ffc0 42%);
+  height: 75vw;
+}
+
+.gallery_2 div {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+
+.gallery_2 div img {
+  width: 35vw;
+  height: 25vw;
+}
+
+.gallery_2 > img {
+  width: 40vw;
+  height: auto;
+}
+
+.poster {
+  margin: 0 8%;
+}
+
+.poster img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery_3 {
+  background: linear-gradient(
+    to left,
+    transparent 16%,
+    #d5b3ff 16%,
+    #d5b3ff 84%,
+    transparent 84%
+  );
+  height: 58vw;
+  justify-content: space-between;
+}
+
+.gallery_3 img:nth-child(1) {
+  width: 35vw;
+  height: 25vw;
+  margin-left: 8%;
+}
+
+.gallery_3 img:nth-child(2) {
+  width: 40vw;
+  height: 40vw;
+  object-fit: cover;
+}
+
+.job-teaser {
+  display: flex;
+  background-color: #b1c5ff;
+  align-items: center;
+  margin: 0 8%;
+  margin-bottom: 7rem;
+}
+
+.job-teaser > img {
+  width: 40vw;
+  height: 40vw;
+  object-fit: cover;
+}
+
+.job-teaser div {
+  padding: 8vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.job-teaser a {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.job-teaser a img {
+  width: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+  padding: 7rem 8%;
+  box-shadow: 0 -1.5px rgba(0, 0, 0, 0.1);
+}
+
+.footer p,
+.footer a {
+  font-size: 1.1rem;
+}
+
+.footer h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.footer h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer-row {
+  display: flex;
+}
+
+.footer-column {
+  width: 30%;
+}
+
+.footer-column ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  flex: 1;
+}
+
+.footer-column a {
+  color: #000;
+}
+
+.newsletter {
+  flex: 2;
+}
+
+.newsletter > form {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.newsletter > form > input {
+  padding: 10px;
+  width: 75%;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: #eee;
+}
+
+.newsletter > form > button {
+  width: 20%;
+  font-size: 1rem;
+  border: none;
+  background-color: #0000ff;
+  color: #fff;
+  font-weight: 500;
+}
+
+.lang-loc > select {
+  background-color: #eee;
+  border: none;
+  padding: 10px;
+  margin-top: 0.6rem;
+}
+
+.lang-loc select:nth-child(2) {
+  width: 30%;
+}
+
+.lang-loc select:nth-child(3) {
+  width: 50%;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.footer-nav ul {
+  gap: 0.8rem;
+}
+
+.footer-nav ul img {
+  width: 45px;
+}
