@@ -25,12 +25,18 @@ h2 {
 }
 
 .header-secondary {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
   padding: 1.5rem 2.5rem;
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-.header ul {
+.header ul,
+.header-secondary ul {
   display: flex;
   align-items: center;
   gap: 2.5rem;
@@ -39,7 +45,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #0000ff;
+  color: #00f;
 }
 
 .header-primary .login {
@@ -55,10 +61,6 @@ a {
 .active {
   color: #fd5948;
 }
-
-/* .main {
-  padding: 0 8%;
-} */
 
 .hero {
   margin: 0 8%;
@@ -270,7 +272,7 @@ a {
   width: 20%;
   font-size: 1rem;
   border: none;
-  background-color: #0000ff;
+  background-color: #00f;
   color: #fff;
   font-weight: 500;
 }
