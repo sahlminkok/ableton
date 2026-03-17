@@ -52,6 +52,22 @@ a {
   font-size: 1rem;
 }
 
+.gallery_2 > img {
+  width: 40vw;
+  height: auto;
+}
+
+.poster img {
+  width: 100%;
+  height: auto;
+}
+
+.job-teaser > img {
+  width: 40vw;
+  height: 40vw;
+  object-fit: cover;
+}
+
 .header nav img {
   width: 60px;
   height: auto;
@@ -102,10 +118,34 @@ a {
   justify-content: space-evenly;
 }
 
+.gallery_2 {
+  background: linear-gradient(to left, transparent 42%, #b6ffc0 42%);
+  height: 75vw;
+}
+
+.gallery_2 div {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+
 .gallery_1 {
   gap: 5vw;
   background: linear-gradient(to right, transparent 42%, #fbffa7 42%);
   height: 58vw;
+}
+
+.gallery_2 div img {
+  width: 35vw;
+  height: 25vw;
+}
+
+.job-teaser a img {
+  width: 20px;
+}
+
+.footer-nav ul img {
+  width: 45px;
 }
 
 .gallery_1 img:nth-child(1) {
@@ -123,44 +163,19 @@ a {
   justify-content: center;
 }
 
-.gallery_2 {
-  background: linear-gradient(to left, transparent 42%, #b6ffc0 42%);
-  height: 75vw;
-}
-
-.gallery_2 div {
-  display: flex;
-  flex-direction: column;
-  gap: 5vw;
-}
-
-.gallery_2 div img {
-  width: 35vw;
-  height: 25vw;
-}
-
-.gallery_2 > img {
-  width: 40vw;
-  height: auto;
-}
-
 .poster {
   margin: 0 8%;
 }
 
-.poster img {
-  width: 100%;
-  height: auto;
-}
-
 .gallery_3 {
-  background: linear-gradient(
-    to left,
-    transparent 16%,
-    #d5b3ff 16%,
-    #d5b3ff 84%,
-    transparent 84%
-  );
+  background:
+    linear-gradient(
+      to left,
+      transparent 16%,
+      #d5b3ff 16%,
+      #d5b3ff 84%,
+      transparent 84%
+    );
   height: 58vw;
   justify-content: space-between;
 }
@@ -185,12 +200,6 @@ a {
   margin-bottom: 7rem;
 }
 
-.job-teaser > img {
-  width: 40vw;
-  height: 40vw;
-  object-fit: cover;
-}
-
 .job-teaser div {
   padding: 8vw;
   display: flex;
@@ -202,10 +211,6 @@ a {
   display: flex;
   align-items: baseline;
   gap: 2px;
-}
-
-.job-teaser a img {
-  width: 20px;
 }
 
 .footer {
@@ -302,8 +307,4 @@ a {
 
 .footer-nav ul {
   gap: 0.8rem;
-}
-
-.footer-nav ul img {
-  width: 45px;
 }
